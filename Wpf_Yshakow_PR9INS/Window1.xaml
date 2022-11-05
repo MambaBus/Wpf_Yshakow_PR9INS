@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Yshakow_PR9INS"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="200" Width="230">
     <Grid>
-        
+        <WrapPanel>
+            <Label x:Name="Dany" Content="ABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+            <Label x:Name="Itog" Content="0" Height="30" Width="100" />
+            <Label x:Name="Itog2" Content="0" Height="37" Width="118" />
+            <Button x:Name="Schet" Content="Счет" Width="150" Height="50" Click="Schet_Click" />
+        </WrapPanel>
     </Grid>
 </Window>

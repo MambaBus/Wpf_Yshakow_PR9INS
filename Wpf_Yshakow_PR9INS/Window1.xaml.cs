@@ -23,5 +23,14 @@ namespace Wpf_Yshakow_PR9INS
         {
             InitializeComponent();
         }
+
+        private void Schet_Click(object sender, RoutedEventArgs e)
+        {
+            string a = Convert.ToString(Dany.Content);
+            int index = a.IndexOf("OP");
+            Itog.Content = Convert.ToString(index);
+            string b = a.Substring(3, 5);
+            Itog2.Content = b;
+        }
     }
 }

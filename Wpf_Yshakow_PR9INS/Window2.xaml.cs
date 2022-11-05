@@ -23,5 +23,15 @@ namespace Wpf_Yshakow_PR9INS
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            ListBoxItem lbi = (ListBoxItem)(phonesList.ItemContainerGenerator.ContainerFromIndex(1));
+            TextBlock.Text = lbi.Content.ToString();
+
+            ListBoxItem lbi2 = (ListBoxItem)(phonesList.ItemContainerGenerator.ContainerFromIndex(4));
+            TextBlock2.Text = lbi2.Content.ToString();
+        }
     }
 }
