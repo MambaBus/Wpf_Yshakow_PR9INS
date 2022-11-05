@@ -23,5 +23,23 @@ namespace Wpf_Yshakow_PR9INS
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string str = "Hello world";
+            string[] arr = str.Split(' ');
+            string result = "";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i].Length != 1)
+                {
+                    char ch1 = arr[i][0];
+                    char ch2 = arr[i][arr[i].Length - 1];
+                    arr[i] = ch2 + arr[i].Substring(1, arr[i].Length - 2) + ch1;
+                }
+                result += arr[i] + " ";
+                t2.Text = result.ToString();
+            }
+        }
     }
 }
